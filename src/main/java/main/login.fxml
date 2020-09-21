@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.loginController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="421.0" style="-fx-background-image: url('login.jpg');" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="421.0" layoutX="-2.0" layoutY="-3.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@login.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="89.0" layoutY="79.0" opacity="0.71" prefHeight="38.0" prefWidth="212.0" style="-fx-border-radius: 10; -fx-border-color: blue;" text="WELCOME TO YOUR ASSISTANT" textAlignment="CENTER" textFill="#2b00ff">
+               <font>
+                  <Font name="Imprint MT Shadow" size="12.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="passwordField" focusTraversable="false" labelFloat="true" layoutX="127.0" layoutY="200.0" promptText="enter password" unFocusColor="#4611a1" />
+            <JFXTextField fx:id="usernameField" focusTraversable="false" labelFloat="true" layoutX="127.0" layoutY="138.0" promptText="enter username" unFocusColor="#2500f5" />
+            <FontAwesomeIconView fill="#3916b8" glyphName="KEY" layoutX="99.0" layoutY="221.0" size="24.0" wrappingWidth="12.0" />
+            <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="153.0" layoutY="260.0" onAction="#login" opacity="0.52" prefHeight="30.0" prefWidth="69.0" ripplerFill="#2200ff" style="-fx-background-color: WHITE;" text="LOG IN">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="#3916b8" glyphName="SIGN_IN" layoutX="134.0" layoutY="283.0" size="24" />
+            <FontAwesomeIconView fill="#3916b8" glyphName="USER" layoutX="102.0" layoutY="159.0" size="24.0" />
+            <JFXButton fx:id="signupButton" buttonType="RAISED" layoutX="282.0" layoutY="338.0" onAction="#signup" opacity="0.52" prefHeight="30.0" prefWidth="86.0" ripplerFill="#2200ff" style="-fx-background-color: BLUE;" text="SIGN UP" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="forgotButton" buttonType="RAISED" layoutX="19.0" layoutY="338.0" onAction="#forgot" prefHeight="30.0" prefWidth="161.0" ripplerFill="#2200ff" style="-fx-background-color: RED;" text="FORGOT PASSWORD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="check" alignment="CENTER" layoutX="51.0" layoutY="231.0" opacity="0.0" prefHeight="22.0" prefWidth="288.0" textFill="RED">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="dbconnect" layoutX="170.0" layoutY="373.0" opacity="0.0" prefHeight="22.0" prefWidth="167.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

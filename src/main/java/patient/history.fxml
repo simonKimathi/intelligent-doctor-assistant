@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@home.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.HistoryController">
+   <children>
+      <ImageView fitHeight="721.0" fitWidth="1168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@doctors.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane opacity="0.79" prefHeight="721.0" prefWidth="1168.0" style="-fx-background-color: blue;" stylesheets="@home.css">
+         <bottom>
+            <HBox prefHeight="28.0" prefWidth="1151.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="status:">
+                     <font>
+                        <Font name="Consolas" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="24.0" prefWidth="306.0" text="connected">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </bottom>
+         <left>
+            <VBox opacity="0.63" prefHeight="623.0" prefWidth="199.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="27.0" prefWidth="119.0" style="-fx-background-color: white;">
+                     <children>
+                        <FontAwesomeIconView glyphName="DESKTOP" size="24.0" wrappingWidth="25.714284896850586">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label prefHeight="24.0" prefWidth="78.0" text="DASHBOARD">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Britannic Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="27.0" prefWidth="119.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" fontSmoothingType="LCD" glyphName="HOME" size="24.0" wrappingWidth="25.714284896850586">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <JFXButton buttonType="RAISED" onAction="#homeb" prefHeight="27.0" prefWidth="96.0" ripplerFill="#8400ff" text="HOME" textFill="WHITE">
+                           <font>
+                              <Font name="Eras Bold ITC" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="45.0" prefHeight="27.0" prefWidth="119.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" fontSmoothingType="LCD" glyphName="USER_MD" size="24.0" wrappingWidth="25.714284896850586">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <JFXButton buttonType="RAISED" onAction="#presc" prefHeight="27.0" prefWidth="121.0" ripplerFill="#8400ff" text="PRESCRIBE" textFill="WHITE">
+                           <font>
+                              <Font name="Eras Bold ITC" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="72.0" prefHeight="27.0" prefWidth="119.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" fontSmoothingType="LCD" glyphName="USER" size="24.0" wrappingWidth="25.714284896850586">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <JFXButton buttonType="RAISED" onAction="#patient" prefHeight="27.0" prefWidth="110.0" ripplerFill="#8400ff" text="PATIENTS" textFill="WHITE">
+                           <font>
+                              <Font name="Eras Bold ITC" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="99.0" prefHeight="27.0" prefWidth="119.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" fontSmoothingType="LCD" glyphName="MAIL_REPLY" size="24.0" wrappingWidth="25.714284896850586" />
+                        <JFXButton buttonType="RAISED" onAction="#bac" prefHeight="27.0" prefWidth="85.0" ripplerFill="#8400ff" text="BACK" textFill="WHITE">
+                           <font>
+                              <Font name="Eras Bold ITC" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="126.0" prefHeight="27.0" prefWidth="119.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="15.0" layoutY="87.0" prefHeight="27.0" prefWidth="119.0" />
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <BorderPane prefHeight="45.0" prefWidth="1168.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <center>
+                  <Label prefHeight="38.0" prefWidth="249.0" text="PATIENTS HISTORY" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </center>
+               <right>
+                  <VBox prefHeight="59.0" prefWidth="145.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </right>
+            </BorderPane>
+         </top>
+         <right>
+            <SplitPane prefHeight="623.0" prefWidth="978.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="htc" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="-4.0" prefHeight="48.0" prefWidth="565.0" style="-fx-background-color: white;" text="HISTORY" textFill="#4400ff">
+                           <font>
+                              <Font name="Algerian" size="18.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane layoutX="31.0" layoutY="41.0" prefHeight="541.0" prefWidth="598.0">
+                           <content>
+                              <TableView fx:id="historyTable" prefHeight="537.0" prefWidth="596.0">
+                                <columns>
+                                  <TableColumn fx:id="observationHistory" prefWidth="196.3333740234375" text="OBSERVATIONS" />
+                                  <TableColumn fx:id="prescriptionHistory" prefWidth="218.6666259765625" text="DIAGNOSIS" />
+                                    <TableColumn fx:id="medicationHistory" prefWidth="255.0" text="MEDICATION" />
+                                </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
